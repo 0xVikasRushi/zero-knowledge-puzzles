@@ -1,17 +1,17 @@
 pragma circom 2.1.4;
 
-
-// In this exercise , you need to create a circuit that takes an array "a"
-// of length '2' as input and a output "c" .
-// Create a circuit that adds the 2 inputs and outputs it .
-
 template Add() {
+<<<<<<< HEAD
    // Your code here
     signal input a [2];
     signal output c;
 
     c <== a[0] + a[1];
+=======
+    signal input in[3];
+
+    in[0] === in[1] + in[2];
+>>>>>>> c39944e8abb995a1ea79b45ae82bf8298b983e67
 }
 
 component main  = Add();
-
