@@ -10,6 +10,12 @@ template HasAtLeastOne(n) {
     signal input in[n];
     signal input k;
     signal output out;
+ 
+    signal equal;
+    for(var i=0;i<n;i++) { 
+       equal <-- (in[i] == k);
+    }
+    out <== equal;
 
 }
 
